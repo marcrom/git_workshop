@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIT Workshop</title>
+    <meta charset="utf-8" />
+    <style>
+        body { font-family: 'Avenir'; margin: 0 auto; background: #333; padding: 3em; }
+        h1 { font-size: 10em; float: left; }
+        .conversation { float: left; }
+
+        .bubble {
+            position: relative;
+            width: 250px;
+            height: 120px;
+            padding: 1.5em;
+            background: #FFFFFF;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            margin-bottom: 2em;
+        }
+        .bubble:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 170px;
+            border-style: solid;
+            border-width: 15px 14px 0;
+            border-color: #FFFFFF transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+        }
+        .conversation { margin-right: 1em; padding-left: 1em; border-left: 1px solid rgba(255, 255, 255, .4); }
+        .conversation:first-child { border-left: 0; }
+    </style>
+</head>
+<body>
+    <div class="conversation">
+        <p class="bubble"> Git Workshop, Baby!  </p>
+        <p class="bubble">git ist ein dezentrales Versionskontrollierungssystem.</p>
+        <p class="bubble">das ist ein verflucht langes Wort.</p>
+    </div>
+    <div class="conversation">
+        <p class="bubble">Guess what!</p>
+        <p class="bubble">it's</p>
+        <p class="bubble">git baby!</p>
+    </div>
+</body>
+</html>
